@@ -79,6 +79,7 @@ class NewtonPipeline:
             # Resolve casbot_02 MJCF: try CWD first, then env var, then known paths
             casbot_mjcf = None
             search_paths = [
+                pathlib.Path.cwd() / "assets" / "casbot_02" / "casbot_02.xml",
                 pathlib.Path.cwd() / ".." / "assets" / "casbot_02" / "casbot_02.xml",
                 pathlib.Path(os.environ.get("CASBOT_02_MJCF_PATH", "")),
                 pathlib.Path(os.environ.get("GMR_ROOT", "")) / "assets" / "casbot_02" / "casbot_02.xml",

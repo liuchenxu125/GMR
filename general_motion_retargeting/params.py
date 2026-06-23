@@ -71,6 +71,12 @@ IK_CONFIG_DICT = {
         "casbot_02": IK_CONFIG_ROOT / "bvh_amp_to_casbot_02.json",
         "casbot_02_auto": IK_CONFIG_ROOT / "bvh_amp_to_casbot_02.json",
     },
+    "bvh_soma":{
+        "unitree_g1": IK_CONFIG_ROOT / "bvh_soma_to_g1.json",
+        "unitree_g1_with_hands": IK_CONFIG_ROOT / "bvh_soma_to_g1.json",
+        "casbot_02": IK_CONFIG_ROOT / "bvh_soma_to_casbot_02.json",
+        "casbot_02_auto": IK_CONFIG_ROOT / "bvh_soma_to_casbot_02.json",
+    },
     "bvh_nokov":{
         "unitree_g1": IK_CONFIG_ROOT / "bvh_nokov_to_g1.json",
     },

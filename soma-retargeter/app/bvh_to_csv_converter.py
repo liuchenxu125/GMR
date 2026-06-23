@@ -52,7 +52,7 @@ class Viewer:
         self.retarget_target_options = ['unitree_g1', 'casbot_02']
         self.retarget_solver_options = ['Newton']
         self.retarget_solver_idx     = 0
-        self.retarget_target_idx     = 1  # default: casbot_02
+        self.retarget_target_idx     = 0  # default: unitree_g1
         self.retarget_source_idx     = 0
 
         self.show_skeleton_mesh = True
@@ -63,27 +63,9 @@ class Viewer:
         self.viewer.renderer.set_title("BVH to CSV Converter")
         self.viewer.register_ui_callback(lambda ui: self.gui(ui), position="free")
 
-        from pathlib import Path
-        import os
         robot_builder = newton.ModelBuilder()
-        # Default viewer model: casbot_02 - try multiple paths
-        casbot_mjcf = None
-        search_paths = [
-            Path.cwd() / ".." / "assets" / "casbot_02" / "casbot_02.xml",
-            Path(os.environ.get("CASBOT_02_MJCF_PATH", "")),
-            Path(os.environ.get("GMR_ROOT", "")) / "assets" / "casbot_02" / "casbot_02.xml",
-            Path.home() / "amp_lab" / "GMR-master" / "assets" / "casbot_02" / "casbot_02.xml",
-        ]
-        for p in search_paths:
-            if p.exists():
-                casbot_mjcf = p
-                break
-        if casbot_mjcf is not None:
-            robot_builder.add_mjcf(str(casbot_mjcf))
-        else:
-            # Fallback to G1 if casbot_02 MJCF not found
-            robot_builder.add_mjcf(
-                newton.utils.download_asset("unitree_g1") / "mjcf/g1_29dof_rev_1_0.xml")
+        robot_builder.add_mjcf(
+            newton.utils.download_asset("unitree_g1") / "mjcf/g1_29dof_rev_1_0.xml")
         
         self.num_robots = 1
         self.robot_offsets = [wp.transform(wp.vec3(0.0, i - (self.num_robots - 1) / 2.0, 0.0), wp.quat_identity()) for i in range(self.num_robots)]

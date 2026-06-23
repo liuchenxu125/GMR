@@ -41,35 +41,16 @@ Thumbs.db
 data/
 data_record/
 Download/
-assets/body_models/
-assets/soma_proportional/
-assets/lafan1/
-assets/amass/
-assets/marathon_001/
-assets/casbot_02/
 
-# Media files
-*.mp4
-*.avi
-*.mov
-*.wmv
-*.flv
-*.webm
+# Data directories
+assets/soma_proportional/
 
 # Archives
-*.zip
-*.tar
 *.tar.gz
-*.rar
-*.7z
 
 # Model files
 smplx/
 body_models/
-*.pkl
-*.pth
-*.pt
-*.ckpt
 
 # Logs
 MUJOCO_LOG.TXT
@@ -101,14 +82,11 @@ dist/
 .cache/
 *.cache
 
-videos/
 PythonClient/
 
 TEST_MOTIONS_MY.md
 
 tmp/
-
-motion_data/
 
 GVHMR/
 
