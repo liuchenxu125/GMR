@@ -27,6 +27,7 @@ ROBOT_XML_DICT = {
     "marathon_002":ASSET_ROOT / "marathon_001" / "marathon_002.xml",
     "casbot_02": ASSET_ROOT / "casbot_02" / "casbot_02.xml",
     "casbot_02_auto": ASSET_ROOT / "casbot_02" / "casbot_02.xml",
+    "casbot_02_7dof": ASSET_ROOT / "casbot_02_7dof" / "xmls" / "CASBOT_02_23dof.xml",
 }
 
 IK_CONFIG_DICT = {
@@ -52,6 +53,7 @@ IK_CONFIG_DICT = {
         "marathon_001": IK_CONFIG_ROOT / "smplx_to_marathon_001.json",
         "casbot_02": IK_CONFIG_ROOT / "smplx_to_casbot_02.json",
         "casbot_02_auto": IK_CONFIG_ROOT / "smplx_to_casbot_02_auto.json",
+        "casbot_02_7dof": IK_CONFIG_ROOT / "smplx_to_casbot_02_7dof.json",
 
     },
     "bvh_lafan1":{
@@ -66,16 +68,19 @@ IK_CONFIG_DICT = {
         "marathon_002": IK_CONFIG_ROOT / "bvh_lafan1_to_marathon_002.json",
         "casbot_02": IK_CONFIG_ROOT / "bvh_lafan1_to_casbot_02.json",
         "casbot_02_auto": IK_CONFIG_ROOT / "bvh_lafan1_to_casbot_02.json",
+        "casbot_02_7dof": IK_CONFIG_ROOT / "bvh_lafan1_to_casbot_02_7dof.json",
     },
     "bvh_amp":{
         "casbot_02": IK_CONFIG_ROOT / "bvh_amp_to_casbot_02.json",
         "casbot_02_auto": IK_CONFIG_ROOT / "bvh_amp_to_casbot_02.json",
+        "casbot_02_7dof": IK_CONFIG_ROOT / "bvh_amp_to_casbot_02.json",
     },
     "bvh_soma":{
         "unitree_g1": IK_CONFIG_ROOT / "bvh_soma_to_g1.json",
         "unitree_g1_with_hands": IK_CONFIG_ROOT / "bvh_soma_to_g1.json",
         "casbot_02": IK_CONFIG_ROOT / "bvh_soma_to_casbot_02.json",
         "casbot_02_auto": IK_CONFIG_ROOT / "bvh_soma_to_casbot_02.json",
+        "casbot_02_7dof": IK_CONFIG_ROOT / "bvh_soma_to_casbot_02.json",
     },
     "bvh_nokov":{
         "unitree_g1": IK_CONFIG_ROOT / "bvh_nokov_to_g1.json",
@@ -124,6 +129,7 @@ ROBOT_BASE_DICT = {
     "marathon_002":"base_link",
     "casbot_02": "base_link",
     "casbot_02_auto": "base_link",
+    "casbot_02_7dof": "torso",
 }
 
 VIEWER_CAM_DISTANCE_DICT = {
@@ -149,4 +155,5 @@ VIEWER_CAM_DISTANCE_DICT = {
     "marathon_002": 3.0,
     "casbot_02": 2.0,
     "casbot_02_auto": 2.0,
+    "casbot_02_7dof": 2.0,
 }
