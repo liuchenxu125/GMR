@@ -28,6 +28,7 @@ ROBOT_XML_DICT = {
     "casbot_02": ASSET_ROOT / "casbot_02" / "casbot_02.xml",
     "casbot_02_auto": ASSET_ROOT / "casbot_02" / "casbot_02.xml",
     "casbot_02_7dof": ASSET_ROOT / "casbot_02_7dof" / "xmls" / "CASBOT_02_23dof.xml",
+    "casbot_02_27dof": ASSET_ROOT / "casbot_02" / "casbot_02_27dof.xml",
 }
 
 IK_CONFIG_DICT = {
@@ -69,6 +70,7 @@ IK_CONFIG_DICT = {
         "casbot_02": IK_CONFIG_ROOT / "bvh_lafan1_to_casbot_02.json",
         "casbot_02_auto": IK_CONFIG_ROOT / "bvh_lafan1_to_casbot_02.json",
         "casbot_02_7dof": IK_CONFIG_ROOT / "bvh_lafan1_to_casbot_02_7dof.json",
+        "casbot_02_27dof": IK_CONFIG_ROOT / "bvh_lafan1_to_casbot_02_27dof.json",
     },
     "bvh_amp":{
         "casbot_02": IK_CONFIG_ROOT / "bvh_amp_to_casbot_02.json",
@@ -130,6 +132,7 @@ ROBOT_BASE_DICT = {
     "casbot_02": "base_link",
     "casbot_02_auto": "base_link",
     "casbot_02_7dof": "torso",
+    "casbot_02_27dof": "torso",
 }
 
 VIEWER_CAM_DISTANCE_DICT = {
@@ -156,4 +159,5 @@ VIEWER_CAM_DISTANCE_DICT = {
     "casbot_02": 2.0,
     "casbot_02_auto": 2.0,
     "casbot_02_7dof": 2.0,
+    "casbot_02_27dof": 2.0,
 }

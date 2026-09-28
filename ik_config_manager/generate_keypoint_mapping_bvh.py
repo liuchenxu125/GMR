@@ -61,7 +61,7 @@ if __name__ == "__main__":
                  "booster_t1", "booster_t1_29dof","stanford_toddy", "fourier_n1", 
                  "engineai_pm01", "kuavo_s45", "hightorque_hi", "galaxea_r1pro",
                  "berkeley_humanoid_lite", "booster_k1", "pnd_adam_lite",
-                 "openloong", "tienkung","joyin","joyin_add", "marathon_001","casbot_02"],
+                 "openloong", "tienkung","joyin","joyin_add", "marathon_001","casbot_02", "casbot_02_27dof"],
         default="unitree_g1",
     )
     
